@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 설명</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+      	* {margin:0; padding: 0;box-sizing: border-box}
+	  	h4{ margin-top: 20px; text-align: center;}
+    	body {min-height: 100vh; background: white;} 
+      /* linear-gradient(to top, #ebd7fc 50%, #8239ff 90%) no-repeat */
+        
+      /* background: -webkit-gradient(linear, left bottom, right top, from(#92b5db), to(#1d466c));
+      background: -webkit-linear-gradient(bottom left, #92b5db 0%, #1d466c 100%)s;
+      background: -moz-linear-gradient(bottom left, #92b5db 0%, #1d466c 100%);
+      background: -o-linear-gradient(bottom left, #92b5db 0%, #1d466c 100%);
+      background: linear-gradient(to top right, #92b5db 0%, #1d466c 100%); */
+      /* background
+     */
+    #joinForm{
+      border-radius: 15px;
+      width: 680px;
+      margin: 0 auto;
+      margin-top: 60px;
+      padding: 32px;
+	  border: 1px solid #000000;}
+
+
+        
+ 
+
+
+    .input-form {
+      max-width: 680px;
+      margin-top: 80px;
+      padding: 32px;
+      border: 1px solid #ddd;
+      /* border-radius: 15px; */
+
+
+      background: #ffffff;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 1px;
+      -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 8px 20px 0 rgba(255, 255, 255, 0.15) 
+      /* 로그인 박스 그림자  */
+    }
+    .btn{
+
+        background:rgba(162, 68, 255, 0.6);
+        background-position: left;
+        background-size: 200%;
+        transition: 0.4s;
+        color: rgb(255, 255, 255);
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 15px
+    }
+       /* 박스 안에 텍스트 넣을려면 하단 주석 풀면 댐 *}
+
+
+            /* 폼 넓이와 사이즈 */
+
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <h4>회원가입</h4>
+
+      <div class="form">
+        <!-- <h4 class="mb-3">회원가입</h4> -->
+        
+        <form action="" id="joinForm">
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
+              <label for="name">이름</label>
+              <input type="text" class="form-control" id="name" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                이름을 입력해주세요.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="nickname">별명</label>
+              <input type="text" class="form-control" id="nickname" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                별명을 입력해주세요.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email">이메일</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+            <div class="invalid-feedback">
+              이메일을 입력해주세요.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address">우편번호</label>
+            <input type="text" class="form-control" id="zipCode" onclick="postCode" required>
+        
+          </div>
+
+          <div class="mb-3">
+            <label for="address">주소</label>
+            <input type="text" class="form-control" id="address" value="" required>
+            <div class="invalid-feedback">
+              주소를 입력해주세요.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address2">상세주소<span class="text-muted">&nbsp;(필수 아님)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="상세주소를 입력해주세요." value=""/>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8 mb-3">
+              <label for="root">가입 경로</label>
+              <select class="custom-select d-block w-100" id="root">
+                <option value=""></option>
+                <option>검색</option>
+                <option>카페</option>
+                <option>추천</option>
+              </select>
+              <div class="invalid-feedback">
+                가입 경로를 선택해주세요.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="code">추천인 코드</label>
+              <input type="text" class="form-control" id="code" placeholder="" required>
+              <div class="invalid-feedback">
+                추천인 코드를 입력해주세요.
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="aggrement" required>
+            <label class="custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
+          </div>
+          <div class="mb-4"></div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">가입 완료</button>
+        </form>
+      </div>
+    </div>
+
+</body>
+
+</script>
+</html>
