@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 부트스트랩  -->
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body class="sign-up-body">
+    <!-- 배경화면 동영상 태그 -->
+    <video id="sign-up-video" muted autoplay loop>
+        <source src="https://www.desktophut.com/files/1659698699-1659698699-ori-video-wallpaper-4k.mp4" type="video/mp4""
+        type=" video/mp4">
+    </video>
+    <div class="sign-up-text">
+            <!-- 동영상 태그 끝 -->
+            <h2 class="sign-up-h2">회원가입</h2>
+            <div class="sign-up-container">
+                <div class="form">
+                    <!-- <h4 class="mb-3">회원가입</h4> -->
+                    <form action="" id="joinForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <label for="name">이름</label>
+                                <input type="text" class="form-control" id="name" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    이름을 입력해주세요.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="nickname">닉네임</label>
+                                <input type="text" class="form-control" id="nickname" placeholder="" value="" required>
+
+                            </div>
+                        </div>
+
+                        <div class="mb-2">
+                            <label for="email">email</label>
+                            <input type="email" class="form-control" placeholder="you@example.com" required>
+
+                        </div>
+
+                        <div class="mb-2">
+                            <label for="address">우편번호</label>
+                            <input type="text" class="form-control" onclick="postCode" required>
+
+                        </div>
+
+                        <div class="mb-2">
+                            <label for="address">주소</label>
+                            <input type="text" class="form-control" value="" required>
+                        </div>
+
+
+                        <div class="mb-2">
+                            <label for="address2">상세주소<span class="text-muted">&nbsp;(필수 아님)</span></label>
+                            <input type="text" class="form-control" placeholder="상세주소를 입력해주세요." value="" />
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8 mb-3">
+                                <label for="root">가입 경로</label>
+                                <select class="custom-select d-block w-100" id="root">
+                                    <option value=""></option>
+                                    <option>검색</option>
+                                    <option>카페</option>
+                                    <option>추천</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    가입 경로를 선택해주세요.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <label for="code">추천인 코드</label>
+                                <input type="text" class="form-control" id="code" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    추천인 코드를 입력해주세요.
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mb-3">
+                        <div class="sign-up-custom-control custom-checkbox">
+                            <input type="checkbox" class="sign-up-custom-control-input" id="aggrement" required>
+                            <label class="sign-up-custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
+                        </div>
+                        <div class="mb-4"></div>
+                        <button class="sign-up-custom-btn btn-8"><span>가입완료</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAGs</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  </head>
+  <script>
+    $(document).ready(function () {
+      $(".view__down__first").hide();
+      $("button.view__btn__first").click(function () {
+        $("div.view__down__first").slideToggle("slow");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".view__down__second").hide();
+      $("button.view__btn__second").click(function () {
+        $("div.view__down__second").slideToggle();
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".view__down__second-1").hide();
+      $("button.view__btn__second-1").click(function () {
+        $("div.view__down__second-1").slideToggle("slow");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".view__down__second-2").hide();
+      $("button.view__btn__second-2").click(function () {
+        $("div.view__down__second-2").slideToggle("slow");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".text__icon").hide();
+      $("button.bot").click(function () {
+        $(".text__icon").slideToggle(600);
+      });
+    });
+  </script>
+  <!-- <script>
+    $(document).ready(function () {
+      $(".text__icon").hide();
+      $("button.bot").keypress(function () {
+        $(".text__icon").slideDown("slow");
+      });
+    });
+  </script> -->
+
+  <body>
+    <header>
+      <div id="nav">
+        <div id="nav__logo">
+          <h1><i class="fa-brands fa-accusoft"></i> WAGs</h1>
+        </div>
+        <div id="nav__right">
+          <ul class="nav__list">
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+          <ul id="nav__icon">
+            <input id="search-input" class="hidden" type="text" />
+            <li id="toggle-vibility">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li>
+              <a href="login.html"><i class="fa-solid fa-user-tie"></i></a>
+            </li>
+
+            <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div id="cart">
+        <div id="cart__top">
+          <i class="fa-solid fa-angles-right"></i>
+          <span>Cart</span>
+          <span class="padding">I</span>
+        </div>
+        <div id="cart__bottom">
+          <span>Cart is empty</span>
+        </div>
+      </div>
+    </header>
+    <main class="pd__backgroundblack">
+      <div class="pd__background">
+        <div>
+          <div class="s1">
+            <a href="#"> home </a> >
+            <a href=""> product </a>
+            > detail
+          </div>
+          <div class="pd__img">
+            <img
+              src="https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_625,h_469,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp"
+              alt=""
+            />
+          </div>
+          <div class="box1">
+            <div class="naming">WAGs gaming product name</div>
+
+            <br />
+            <div class="price">Price : <del>1,000$</del> → 799.98$!!</div>
+            <br />
+
+            <br />
+            <div class="quantity">Quantity : <br /></div>
+            <input
+              class="quantity_sub"
+              type="number"
+              min="0"
+              max="100"
+              placeholder="1"
+            />
+            <br />
+            <br />
+            <div class="op__">
+              Option :
+              <br />
+              <select class="poi" name="" id="">
+                <option value="" selected>Add more Option</option>
+                <option value="">color point red + 50$</option>
+                <option value="">color point white + 50$</option>
+                <option value="">color point blue + 50$</option>
+                <option value="">add product + 800$</option>
+                <option value="">more parts + 100$</option>
+              </select>
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <div>
+                <button id="buy__btn" type="button">
+                  <a href="#"> Add to Cart </a>
+                </button>
+              </div>
+            </div>
+            <br />
+          </div>
+          <div class="detail__big">
+            This area is product detail introduce text
+            <div><button class="view__btn__first">view more +</button></div>
+            <div class="view__down__first">
+              이곳은 설명칸으로 사용될 예정dsddddfdfb <br />
+              dsfdsfdsfsdfdsfd
+            </div>
+          </div>
+          <div class="detail__small">
+            detail product introduce title
+            <div>
+              <button class="view__btn__second">Product Info detail +</button>
+              <br />
+              <div class="view__down__second">
+                real detail introduce product, <br />
+                somebody help dsfjsdfdsdfdfsdfdsd <br />
+                sfsdfsdfsdfdsvxcvxcvrehwssd <br />
+                sddsfdsf dsfjsdfdsdfdfsdfdsdsf <br />
+                sdfsdfsdfdsvxcvxcvrehw <br />
+                ssdsddsfdsf
+              </div>
+              <br />
+              <button class="view__btn__second-1">
+                Return and Refund Policy detail +
+              </button>
+              <br />
+              <div class="view__down__second-1">
+                real detail introduce product, somebody help
+                <br />dsfjsdfdsdfdfsdfds <br />dsfsdfsdfsdfdsvxcvxcvrehwssdsd
+              </div>
+              <br />
+              <button class="view__btn__second-2">
+                Shopping Info detail +
+              </button>
+              <div class="view__down__second-2">
+                real detail introduce product, somebody help
+                <br />dsfjsdfdsdfdfsdfds <br />dsfsdfsdfsdfdsvxcvxcvrehwssdsd
+              </div>
+            </div>
+          </div>
+          <div class="chat">
+            <button class="bot">
+              <img class="chat__img" src="" alt="" />
+            </button>
+            <div class="text__icon">
+              <div class="chat__log1">User Info</div>
+              <div class="chat__log2">profile</div>
+              <div class="chat__message">
+                <div class="mk2">
+                  Hey there, please leave your details so we can contact you
+                  even if you are no longer on the site.
+                </div>
+              </div>
+              <div class="chat__message1">
+                <br />
+                <input class="mk" type="text" placeholder="name" /> <br />
+                <br />
+                <input class="mk" type="email" placeholder="email" />
+                <br />
+                <button class="submit_btn" value="submit">
+                  <a href="#">submit</a>
+                </button>
+              </div>
+              <br />
+              <input
+                class="text"
+                type="text"
+                placeholder="    type your message"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="foot__top">
+        <div class="foot__upperbox">
+          <h1><i class="fa-brands fa-accusoft"></i> WAGs</h1>
+        </div>
+        <div class="foot__upperbox">
+          <ul>
+            <span class="foot__firstline">Products</span>
+            <li>Games</li>
+            <li>Consoles</li>
+            <li>Controllers</li>
+            <li>Accessories</li>
+          </ul>
+        </div>
+        <div class="foot__upperbox">
+          <ul>
+            <span class="foot__firstline">Store</span>
+            <li>
+              500 Terry Francois Street <br />
+              San Francisco, CA94158
+            </li>
+            <li>Mon-Fri: 9am - 9pm</li>
+            <li>info@mysite.com</li>
+            <li>123-456-7890</li>
+          </ul>
+        </div>
+        <div class="foot__upperbox">
+          <span class="foot__firstline">Policy</span>
+          <ul>
+            <li>Terms & Conditions</li>
+            <li>Shipping Policy</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="line">&nbsp;</div>
+      <div id="foot__bottom">
+        <div class="foot__underbox">
+          <span id="pay">Payment Methods</span><br />
+          <img src="/img/pay.PNG" />
+        </div>
+        <div class="foot__underbox">
+          <span id="pay">Join the Community</span><br />
+          <img src="/img/join.png" />
+        </div>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0f1871673a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+버튼 마우스 올렸을때 그라데이션 효과 알림톡dddddddcxvcvcxvcxvcxdssdasdsa
+<!-- <script>
+  $( document ).ready( function() {
+    $(this).hide()
+    $( 'button.view__btn' ).click( function() {
+      $( '.view__slidedown' ).slideDown();
+    } );
+  } );
+</script>
+<style>
+  .b { display: none; height: 100px; background-color: #bbdefb; }
+</style>
+<p><button class="a">Click</button></p>
+<div class="b"></div> -->
+class a에 해당하는 버튼을 클릭하면 class b에 해당하는 효과가 내려온다 채팅봇
+마우스 클릭스 엔터 버튼 생성
