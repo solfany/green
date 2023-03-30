@@ -1,391 +1,646 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WAGs</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>게시판</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- 퍼비콘 https://www.flaticon.com/kr/free-icon/faq_9592933?related_id=9592933 해당 사이트 참조 -->
+  <link href="assets/img/free-icon-computer-desktop-4231180.png" rel="icon">
+  <link href="assets/img/free-icon-computer-desktop-4231180.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
-<body id="index__body">
-  <video autoplay loop id="video-background" poster="" muted>
-    <source src="img/mylivewallpapers.com-Ashen-Knight-Pyke.mp4" type="video/mp4" />
-  </video>
-  <header>
-    <div id="nav">
-      <div id="nav__logo">
-        <video autoplay id="logo-mp4" muted height="110px" width="300px">
-          <source src="img/main_logo.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div id="nav__right">
-        <ul class="nav__list">
-          <li>
-            <a href="about-us.html">About Us</a>
-          </li>
-          <li>
-            <a href="products.html">Products</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-        <ul id="nav__icon">
-          <input id="search-input" class="hidden" type="text" />
-          <li id="toggle-vibility">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </li>
+<body>
+  <div class="main-body">
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
 
-          <li>
-            <a href="login.html"><i class="fa-solid fa-user-tie"></i></a>
-          </li>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">DEV<span>talk</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-          <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
-        </ul>
-      </div>
-    </div>
-    <div id="lightoff" class="hidden"></div>
-    <div id="cart">
-      <div id="cart__top">
-        <i class="fa-solid fa-angles-right"></i>
-        <span>Cart</span>
-        <span class="padding">I</span>
-      </div>
-      <div id="cart__bottom">
-        <span>Cart is empty</span>
-      </div>
-    </div>
-  </header>
-  <a href="products.html"></a>
-  <main id="index__main">
-    <div id="main__first">
-      <div id="main__first__div">
-        <p id="main__first__p">
-          Power up your Game <br />
-          <span class="big">
-            CYBER KID <br />
-            INFINITE</span>
-          <br />
-          Now Available on PC & Console
-        </p>
-        <a href="products.html"><button class="go-to-products-btn" type="submit">
-            Buy Now
-          </button></a>
-      </div>
-      <div id="main__first__img">
-        <img src="./img/Cyber-copy.webp" alt="" />
-      </div>
-    </div>
-    <div id="main__second">
-      <div class="main__title__box" id="main2__title">
-        <span class="main__title">BEST SELLERS</span>
-        <a href="products.html"><button class="go-to-products-btn2" type="submit">
-            View All
-          </button></a>
-      </div>
-      <div id="main__second__contents">
-        <div class="prev">
-          <i class="fa-solid fa-circle-chevron-left"></i>
-        </div>
-        <div id="slide__wrapper">
-          <ul class="slides">
-            <li>
-              <div class="best-img-box">
-                <img src="./img/best1.webp" alt="" />
-              </div>
-              <p>
-                Wave Gen RX <br />
-                <span class="best-price">$579.99</span>
-              </p>
-              <button class="best-btn">Add to Cart</button>
-            </li>
-            <li>
-              <div class="best-img-box">
-                <img src="./img/best2.webp" alt="" />
-              </div>
-              <p>
-                X-2 Wireless Mouse <br />
-                <span class="best-price">$24.99</span>
-              </p>
-              <button class="best-btn">Add to Cart</button>
-            </li>
-            <li>
-              <div class="best-img-box">
-                <img src="./img/ancient_souls.webp" alt="" />
-              </div>
-              <p>
-                Ancient Souls <br />
-                <span class="best-price">$39.99</span>
-              </p>
-              <button class="best-btn">Add to Cart</button>
-            </li>
-            <li>
-              <div class="best-img-box">
-                <img src="./img/Chronosplit.webp" alt="" />
-              </div>
-              <p>
-                Chronosplit <br />
-                <span class="best-price">$39.99</span>
-              </p>
-              <button class="best-btn">Add to Cart</button>
-            </li>
-            <li>
-              <div class="best-img-box">
-                <img src="./img/Playbox_XZ_Gold_Edition.webp" alt="" />
-              </div>
-              <p>
-                Playbox XZ Gold Edition<br />
-                <span class="best-price">$1,000.00</span>
-              </p>
-              <button class="best-btn">Add to Cart</button>
-            </li>
-            <li>
-              <div class="best-img-box">
-                <img src="./img/Raptor.webp" alt="" />
-              </div>
-              <p>
-                Raptor <br />
-                <span class="best-price"><del>$29.99</del>&nbsp; $26.99</span>
-              </p>
-              <button class="best-btn">Add to Cart</button>
-            </li>
-            <li>
-              <div class="best-img-box">
-                <img src="./img/Echo_Headset.webp" alt="" />
-              </div>
-              <p>
-                Echo_Headset<br />
-                <span class="best-price">$39.99</span>
-              </p>
-              <button class="best-btn">Add to Cart</button>
-            </li>
-            <li>
-              <div class="best-img-box">
-                <img src="./img/Wave.webp" alt="" />
-              </div>
-              <p>
-                Wave<br />
-                <span class="best-price">$29.99</span>
-              </p>
-              <button class="best-btn">Add to Cart</button>
-            </li>
-            <li>
-              <div class="best-img-box">
-                <img src="./img/Spartan_Mechanical_Keyboard.webp" alt="" />
-              </div>
-              <p>
-                Spartan Mechanical Keyboard<br />
-                <span class="best-price"><del>$44.99</del>&nbsp; $40.49</span>
-              </p>
-              <button class="best-btn">Add to Cart</button>
-            </li>
-            <li>
-              <div class="best-img-box">
-                <img src="./img/Mach_Gaming_Chair.webp" alt="" />
-              </div>
-              <p>
-                Mach Gaming Chair<br />
-                <span class="best-price"><del>$129.99</del>&nbsp; $116.99</span>
-              </p>
-              <button class="best-btn">Add to Cart</button>
-            </li>
-          </ul>
-        </div>
-        <div class="next">
-          <i class="fa-solid fa-circle-chevron-right"></i>
-        </div>
-      </div>
-    </div>
-    <div id="main__third">
-      <div class="main__title__box">
-        <span class="main__title">SHOP BY CATEGORY</span>
-      </div>
-      <div id="main__third__contents">
-        <div class="main__third__con">
-          <div class="img__con">
-            <img class="main__third__img" src="img/console1.jpg" />
-          </div>
-          <span class="main__third__span">Consoles</span>
-        </div>
-        <div class="main__third__con">
-          <div class="img__con">
-            <img class="main__third__img" src="img/accessories.JPG" />
-          </div>
-          <span class="main__third__span">Accessories</span>
-        </div>
-        <div class="main__third__con">
-          <div class="img__con">
-            <img class="main__third__img" src="img/controlers.jpg" />
-          </div>
-          <span class="main__third__span">Controllers</span>
-        </div>
-      </div>
-    </div>
-    <div id="main__fourth">
-      <div id="fourth__box1">
-        <p>
-          THIS WEEK'S DEALS <br />
-          <span class="king-big">10%</span><br />
-          <span class="fourth-big">off all games</span><br />
-          <a href="products.html"><button class="forth-btn" type="submit">Shop Now</button></a>
-        </p>
-      </div>
-    </div>
-
-    <div id="fourth__box__con">
-      <div id="fourth__box2">
-        <img src="img/kira.webp" width="380px" height="520px" />
-      </div>
-      <div id="fourth__box3">
-        <img src="img/chrono.jpg" width="380px" height="520px" />
-      </div>
-      <div id="fourth__box4">
-        <img src="img/deadatlast.jpg" width="380px" height="520px" />
-      </div>
-    </div>
-    </div>
-
-
-
-    <div id="main__five">
-      <div id="five__box1">
-        <p>
-            <!-- <script src="js/main5.js"> </script> -->
-
-
-            <div id="part5-wrapper">
-              <section id="part5-content">
-                <section class="part5-images">
-                  <img class="part5-img" data-speed="0.8" src="https://images.unsplash.com/photo-1556856425-366d6618905d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5lb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
-                  <img class="part5-img" data-speed="0.9" src="https://images.unsplash.com/photo-1520271348391-049dd132bb7c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="">
-                  <img class="part5-img" data-speed="1" src="https://images.unsplash.com/photo-1609166214994-502d326bafee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="">
-                  <img class="part5-img" data-speed="1.1" src="https://images.unsplash.com/photo-1589882265634-84f7eb9a3414?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=434&q=80" alt="">
-                  <img class="part5-img" data-speed="0.9" src="https://images.unsplash.com/photo-1514689832698-319d3bcac5d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=434&q=80" alt="">
-                  <img class="part5-img" data-speed="1.2" src="https://images.unsplash.com/photo-1535207010348-71e47296838a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="">
-                  <img class="part5-img" data-speed="0.8" src="https://images.unsplash.com/photo-1588007375246-3ee823ef4851?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fG5lb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
-                  <img class="part5-img" data-speed="1" src="https://images.unsplash.com/photo-1571450669798-fcb4c543f6a4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fG5lb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
-                </section>
-              </section>
-          </div>
-        </div>
-          <script src='https://assets.codepen.io/16327/gsap-latest-beta.min.js?r=3.10.0'></script>
-          <script src='https://assets.codepen.io/16327/ScrollTrigger.min.js?v=3.10.0'></script>
-          <script src='https://assets.codepen.io/16327/ScrollSmoother.min.js?v=99999'></script><script  src="./js/main5.js"></script>
-    
-    
-
-          <!-- THIS WEEK'S DEALS <br />
-          <span class="king-big">10%</span><br />
-          <span class="fourth-big">off all games</span><br />
-          <a href="products.html"><button class="forth-btn" type="submit">Shop Now</button></a> -->
-        </p>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div id="main__five ">
-
-      <div class="part5-main">
-        <div id="part5-wrapper">
-          <section id="part5-content">
-            <section class="part5-images">
-              <img class="part5-img" data-speed="0.8" src="https://images.unsplash.com/photo-1556856425-366d6618905d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5lb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
-              <img class="part5-img" data-speed="0.9" src="https://images.unsplash.com/photo-1520271348391-049dd132bb7c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="">
-              <img class="part5-img" data-speed="1" src="https://images.unsplash.com/photo-1609166214994-502d326bafee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="">
-              <img class="part5-img" data-speed="1.1" src="https://images.unsplash.com/photo-1589882265634-84f7eb9a3414?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=434&q=80" alt="">
-              <img class="part5-img" data-speed="0.9" src="https://images.unsplash.com/photo-1514689832698-319d3bcac5d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=434&q=80" alt="">
-              <img class="part5-img" data-speed="1.2" src="https://images.unsplash.com/photo-1535207010348-71e47296838a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="">
-              <img class="part5-img" data-speed="0.8" src="https://images.unsplash.com/photo-1588007375246-3ee823ef4851?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fG5lb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
-              <img class="part5-img" data-speed="1" src="https://images.unsplash.com/photo-1571450669798-fcb4c543f6a4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fG5lb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
-            </section>
-          </section>
-      </div>
-
-    </div>
-      <script src='https://assets.codepen.io/16327/gsap-latest-beta.min.js?r=3.10.0'></script>
-      <script src='https://assets.codepen.io/16327/ScrollTrigger.min.js?v=3.10.0'></script>
-      <script src='https://assets.codepen.io/16327/ScrollSmoother.min.js?v=99999'></script><script  src="./script.js"></script>
-       -->
-
-  </main>
-
-
-
-  <!-- 여기까지  -->
-
-  <footer>
-    <div id="foot__top">
-      <div class="foot__upperbox">
-        <h1><i class="fa-brands fa-accusoft"></i> WAGs</h1>
-      </div>
-      <div class="foot__upperbox">
+      <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <span class="foot__firstline">Products</span>
-          <li>Games</li>
-          <li>Consoles</li>
-          <li>Controllers</li>
-          <li>Accessories</li>
-        </ul>
-      </div>
-      <div class="foot__upperbox">
-        <ul>
-          <span class="foot__firstline">Store</span>
-          <li>
-            500 Terry Francois Street <br />
-            San Francisco, CA94158
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="technology.html">기술 지식</a></li>
+          <li><a class="nav-link scrollto" href="#####">프로젝트 찾기</a></li>
+          <li><a class="nav-link scrollto " href="#####">프리랜서 찾기</a></li>
+          <li><a class="nav-link scrollto" href="커뮤니티.html">커뮤니티</a></li>
+          <li class="dropdown"><a href="#####"><span>Q&A</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">#java</a></li>
+              <li><a href="#">#javascript</a></li>
+              <li><a href="#">#python</a></li>
+              <li><a href="#">#spring</a></li>
+              <li><a href="#">#react</a></li>
+              <li class="dropdown"><a href="#"><span>#development tools</span> <i class="bi bi-chevron-right"></i></a>
+                <ul
+  
+                  <li><a href="#">eclipse</a></li>
+                  <li><a href="#">Atom</a></li>
+                  <li><a href="#">vscode</a></li>
+                  <li><a href="#">etc</a></li>
+                </ul>
+              </li>
+
+            </ul>
           </li>
-          <li>Mon-Fri: 9am - 9pm</li>
-          <li>info@mysite.com</li>
-          <li>123-456-7890</li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
         </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="login.html" class="get-started-btn scrollto">login</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>세상 모든 <span>개발자</span></h1>
+          <h2>개발자 전용 플랫폼 지금 경험하러 가기</h2>
+        </div>
       </div>
-      <div class="foot__upperbox">
-        <span class="foot__firstline">Policy</span>
-        <ul>
-          <li>Terms & Conditions</li>
-          <li>Shipping Policy</li>
-          <li>Privacy Policy</li>
-          <li>Cookie Policy</li>
-          <li>FAQ</li>
-        </ul>
+
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-5">
+          <div class="icon-box">
+            <i class="ri-store-line"></i>
+            <h3><a href="">질문하기</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-5">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line"></i>
+            <h3><a href="">기술</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-5">
+          <div class="icon-box">
+            <i class="ri-calendar-todo-line"></i>
+            <h3><a href="">커리어</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-5">
+          <div class="icon-box">
+            <i class="ri-paint-brush-line"></i>
+            <h3><a href="">프로젝트</a></h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>개발자 전용 소통 플랫폼</h3><br>
+            <p>
+              개발을 하다 궁금한 점이 생겨 주변에 물어봐도 같은 분야가 아니라면  <br> 
+              원하는 답을 얻지 못하기 마련이죠, 이러한 고충을 해결하기 위해   <br> 
+              "개발자" 전용 플랫폼 DEVTALK 을 이용해보세요!
+            </p> <br> 
+            <ul>
+              <li><i class="ri-check-double-line"></i> 공통 분야 개발자와 직접 친목을 다지며 소통해보세요 </li>
+              <li><i class="ri-check-double-line"></i> 커리어 전환을 원한다면 현직 개발자에게 상담을 해보세요 </li>
+              <li><i class="ri-check-double-line"></i> 기술적인 부분에 대해 함께 토론해보세요 </li>
+            </ul>
+            <p>
+              프로그래밍 커뮤니티에서 유저 그룹은 특정 주제에 관심이 있는 사람들의 네트워크를 만들도록 도와줍니다. 
+              당신의 스킬업과 다른 개발자와의 친목을 원하신다면 매우 좋은 장소죠. 
+              유저 그룹은 비공식적이며 유저 그룹에 따라 구조가 다릅니다. 누구라도 독자적인 룰과 일정으로 그룹을 만들 수 있습니다.
+              경험해보세요
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/pngwing.com.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/pngwing.com (3).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/pngwing.com (5).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/pngwing.com (6).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/pngwing.com (7).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/pngwing.com (8).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/pngwing.com (2).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/pngwing.com (9).png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>그룹을 형성해 사이드 프로젝트를 진행해보세요  </h2>
+          <p> 프로젝트 진행하기 </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">사이드 프로젝트 (광고) </a></h4>
+              <p>해당 박스를 누르면 해당하는 광고 페이지로 이동합니다. 광고로는 프리랜서 모집/채용 공고 등이 올 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">개발자 구인공고 (광고)</a></h4>
+              <p>해당 박스를 누르면 해당하는 광고 페이지로 이동합니다. 광고로는 프리랜서 모집/채용 공고 등이 올 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">개발자 구인공고 (광고)</a></h4>
+              <p>해당 박스를 누르면 해당하는 광고 페이지로 이동합니다. 광고로는 프리랜서 모집/채용 공고 등이 올 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">개발자 구인공고 (광고)</a></h4>
+              <p>해당 박스를 누르면 해당하는 광고 페이지로 이동합니다. 광고로는 프리랜서 모집/채용 공고 등이 올 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">개발자 구인공고 (광고)</a></h4>
+              <p>해당 박스를 누르면 해당하는 광고 페이지로 이동합니다. 광고로는 프리랜서 모집/채용 공고 등이 올 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">개발자 구인공고 (광고)</a></h4>
+              <p>해당 박스를 누르면 해당하는 광고 페이지로 이동합니다. 광고로는 프리랜서 모집/채용 공고 등이 올 수 있습니다.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>소통의 중심 DEV TALK</h3>
+          <p> 개발자 커뮤니티를 통해 개발자들은 서로 정보를 공유하고 문제를 해결할 수 있습니다. <br>
+            이를 통해 개발자들은 새로운 기술과 도구에 대한 정보를 얻고, 더 나은 코드를 작성하는 방법을 배울 수 있습니다.</p>
+          <a class="cta-btn" href="#">질문하러 가기</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>DEV TALK 에서 사이드 프로젝트를 진행해보세요</h3>
+              <p>
+                여러 분야에서 다양한 경험과 노하우를 공유하며 새로운 프로젝트를 진행해 보세요! <br>
+                DEV TALK에서는 사이드 프로젝트를 직접 진행할 수도, 프리랜서를 모집할 수 있습니다.
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>새로운 기술과 경험 쌓기</strong>사이드 프로젝트를 진행하면서 새로운 기술과 도구를 적용하고, 문제를 해결하는 방법을 습득할 수 있습니다. 이를 통해 개발자는 다양한 경험과 능력을 쌓아 새로운 기술을 익히는 데 도움이 됩니다.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>창의성과 자유로운 아이디어 발굴</strong>사이드 프로젝트는 개발자가 자유롭게 아이디어를 발굴하고, 창의적인 방식으로 문제를 해결할 수 있는 기회를 제공합니다. 이를 통해 더 나은 프로젝트를 수행할 수 있습니다.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>개인 브랜딩과 경력 개발</strong>사이드 프로젝트를 통해 개발자는 자신의 능력과 경험을 증명하며, 개인 브랜딩을 강화할 수 있습니다. 이를 통해 좋은 취업 기회를 찾을 수 있고, 경력을 발전시킬 수 있습니다.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>새로운 인맥과 커뮤니티 활동</strong>사이드 프로젝트는 다양한 사람들과의 인맥을 쌓을 수 있는 기회를 제공합니다. 개발자는 개인 프로젝트를 공유하고, 다른 개발자와 소통하며 커뮤니티 활동을 통해 더 많은 지식과 정보를 얻을 수 있습니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>홍 길동</h3>
+                <h4> Front-end developer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  프론트 시니어 개발자 입니다. .<br> 궁금한 점이 있다면 질문해보세요, 답변해드리겠습니다. 
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>김 미나</h3>
+                <h4>Back-end developer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  백엔드 시니어 개발자 입니다. .<br>
+                  진로 및 코드 리뷰 등 질문을 해보세요! .<br> 
+                  답변해드리겠습니다. 
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>정 하나</h3>
+                <h4>database developer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  현직 데이터 베이스 전문 개발자입니다. .<br>
+                  데이터 베이스에 대해 궁금한 점이 있다면, 질문해보세요! 
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>박 성현</h3>
+                <h4>Gaming developer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  현직 게임 개발자입니다. Nexon과 Riot에서의 개발 활동을 했습니다. .<br>
+                  궁금한 점이 있다면 질문해보세요! .<br>
+                  답변 해드리겠습니다.  
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>이 지원</h3>
+                <h4>information security professional</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  정보 보안 개발자 입니다. .<br>
+                  저와 저의 동료들은 정보보안 전문가 부터 화이트 해커 등 다양한 분야로 정보 보안 부분을 개발 및 담당하고 있습니다. .<br>
+                  궁금한 점이 있다면 질문해보세요 !
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2> 이달의 베스트 답변 </h2>
+          <p> 현직 개발자</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>홍 길동</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>박 미나</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>이 지원</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>정 한솔</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>직접 문의하기</h2>
+          <p>DEV TALK</p>
+        </div>
+
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.6802504163493!2d127.1067579504634!3d37.35007797974005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59c68833bf29%3A0xfd012d2ccd7c596f!2z66-46riI7Jet!5e0!3m2!1sko!2skr!4v1679567254612!5m2!1sko!2skr" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location: </h4>
+                <p>9425+2H 성남시 경기도</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>solfany1999@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+82 0000 00000</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>dev<span>talk</span></h3>
+              <p>
+                Contact from a  <br>
+                prospective developer <br>
+                in Korea <br><br>
+                <strong>Phone:</strong> +82 0000 0000<br>
+                <strong>Email:</strong> solfany1999@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+           </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>category</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">기술 지식</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">프로젝트 찾기</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">프리랜서 찾기 </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">커뮤니티</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Q&A</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">공지사항</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">광고문의</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">채용</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">버그제보</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">개인정보 처리 방침</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="terms.html">서비스 이용 약관</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h3>DEV TALK 뉴스레터 받아보기</h3>
+            <p>추가적인 이벤트 혜택을 메일로 받아보세요!<br> 
+              매달 새로운 소식이 쏟아집니다</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
       </div>
     </div>
-    <div class="line">&nbsp;</div>
-    <div id="foot__bottom">
-      <div class="foot__underbox">
-        <span id="pay">Payment Methods</span><br />
-        <img src="img/pay.PNG" />
+
+    <div class="container">
+      <div class="copyright">
+        <strong><span>DEV TALK</span></strong>.
       </div>
-      <div class="foot__underbox">
-        <span id="pay">Join the Community</span><br />
-        <img src="img/join.png" />
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Designed by <a href="https://github.com/solfany">solfany</a>
       </div>
     </div>
-  </footer>
+  </div>
+  </footer><!-- End Footer -->
 
-  <video autoplay loop id="video-splash" poster="" muted>
-    <source src="img/mylivewallpapers.com-Ashen-Knight-Pyke.mp4" type="video/mp4" />
-  </video>
-  <!-- 
-    <div id="splash-screen">
-      <img id="splash-img" src="img/logo-splash.gif" />
-    </div> -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- <script src="js/main5.js"></script> -->
-  <script src="js/main2.js"></script>
-  <script src="js/main4.js"></script>
-  <script src="js/nav.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
